@@ -1,0 +1,2 @@
+Name,Architecture,Training,Train_Accuracy,Test_Accuracy
+Model_001,cheXNet + Dense(1,'sigmoid'),Adam - binary_crossentropy - 30 epochs, 0.9363, N/A
