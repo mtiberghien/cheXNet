@@ -1,4 +1,5 @@
-Name,Architecture, Preprocessing,Training,Train_Accuracy,Test_Accuracy
-Model_001,cheXNet + Dense(1,'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs, 0.9363, 0.8573
-Model_002,cheXNet + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs,0.9452,0.8654
-Model_003,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 4 epochs,0.9979, 0.8141
+Name, Source,Architecture, Preprocessing,Training,Train_Accuracy,Test_Accuracy
+Model_001,guangzhou,cheXNet + Dense(1,'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs, 0.9363, 0.8573
+Model_002,guangzhou,cheXNet + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs,0.9452,0.8654
+Model_003,guangzhou,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 4 epochs,0.9979, 0.8141
+Model_004,guangzhou + NIH,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255 - CLAHE,Adam - binary_crossentropy - 10 epochs,0.9898,0.7334
