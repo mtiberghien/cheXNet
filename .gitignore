@@ -1,3 +1,4 @@
 # Project exclude paths
 /venv/
 /models/Model_003.h5
+/models/Model_004.h5
