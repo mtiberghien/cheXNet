@@ -1,5 +1,13 @@
 Name, Source,Architecture, Preprocessing,Training,Train_Accuracy,Test_Accuracy
 Model_001,guangzhou,cheXNet + Dense(1,'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs, 0.9363, 0.8573
+Model_001_nih,nih,cheXNet + Dense(1,'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs, 0.7609, 0.7404
 Model_002,guangzhou,cheXNet + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs,0.9452,0.8654
+Model_002_nih,nih,cheXNet + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs,0.7631,0.7561
 Model_003,guangzhou,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 4 epochs,0.9979, 0.8141
+Model_003_nih,nih,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255,Adam - binary_crossentropy - 30 epochs, 0.9143, 0.6829
 Model_004,guangzhou + NIH,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255 - CLAHE,Adam - binary_crossentropy - 10 epochs,0.9898,0.7334
+Model_005,guangzhou,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255 - CLAHE,Adam - binary_crossentropy - data augmentation - fine tuning - 10 epochs,0.9631, 0.0.9203
+Model_006,guangzhou simplified,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255 - Input 512x512,Adam - binary_crossentropy - data augmentation - fine tuning - 10 epochs,0.9660, 0.9297
+Model_007,guangzhou simplified,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255 - CLAHE - Input 512x512,Adam - binary_crossentropy - data augmentation - fine tuning - 50 epochs,0.9895, 0.8922
+Model_008,mix simplified,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255 - Input 512x512,Adam - binary_crossentropy - data augmentation - fine tuning - 60 epochs,0.9512, 0.9146
+Model_009,mix simplified,resnet50v2 + Dense(16,'relu') + Dense(1, 'sigmoid'), rescale 1./255 - Input 224x224,Adam - binary_crossentropy - data augmentation - fine tuning - 60 epochs,0.9818, 0.9136
